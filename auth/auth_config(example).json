@@ -1,0 +1,14 @@
+
+{
+    "TWITCH_TOKEN": "your Oauth token from twitch",
+    "TWITCH_CLIENT_ID": "your client id from twitch",
+    "TWITCH_CLIENT_SECRET": "your client secret from twitch",
+    "BOT_NICK": "your account name",
+    "CHANNEL": "your channel name",
+    "OPENAI_API_KEY": "your openai api key"
+}
+
+
+
+
+

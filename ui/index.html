@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Majorator Configuration</title>
+    <!-- Google Font: Wire One -->
+    <link href="https://fonts.googleapis.com/css2?family=Wire+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-gray-900 text-white">
+
+    <div class="container mx-auto p-4">
+        <h1 class="text-3xl font-bold text-center mb-8">Bot Configuration</h1>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-4">Chat Rules</h3>
+            <textarea id="chat-rules" class="w-full h-32 p-2 border border-gray-600 rounded bg-gray-700 text-white mb-4"></textarea>
+            <button onclick="updateConfig()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Update Rules</button>
+        </div>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-4">Warnings Before Ban</h3>
+            <input type="number" id="warnings-before-ban" min="1" class="w-full p-2 border border-gray-600 rounded bg-gray-700 text-white mb-4" />
+            <button onclick="updateConfig()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Update Warnings</button>
+        </div>
+
+        <div class="bg-gray-800 shadow-md rounded-lg p-6 mb-6">
+            <h3 class="text-xl font-semibold mb-4">Ignore Messages</h3>
+            <div class="flex items-center mb-4">
+                <input type="checkbox" id="ignore-broadcaster" class="mr-2">
+                <label for="ignore-broadcaster">Ignore Broadcaster Messages</label>
+            </div>
+            <div class="flex items-center mb-4">
+                <input type="checkbox" id="ignore-mods" class="mr-2">
+                <label for="ignore-mods">Ignore Moderator Messages</label>
+            </div>
+            <button onclick="updateConfig()" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Save Settings</button>
+        </div>
+
+        <div id="notification" class="fixed bottom-4 right-4 p-4 bg-green-500 text-white rounded shadow-md hidden">
+            Configuration updated successfully!
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,10 @@
+{
+    "chat_rules": [
+        "Be respectful.",
+        "No hate speech, harassment, or discrimination.",
+        "No spamming or inappropriate content."
+    ],
+    "warnings_before_ban": "3",
+    "ignore_broadcaster": true,
+    "ignore_mods": false
+}

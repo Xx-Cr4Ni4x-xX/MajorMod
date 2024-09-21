@@ -1,0 +1,11 @@
+{
+    "chat_rules": [
+        "Be respectful.",
+        "No hate speech, harassment, or discrimination.",
+        "No spamming or inappropriate content."
+    ],
+    "warnings_before_ban": 3,
+    "ban_duration": 24,
+    "admin_contact": "admin@example.com",
+    "logging_level": "info"
+}
